@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 5 resources" deleteContents="false" description="Delete 5 resources" element1="/ejb_stateful_simple" element2="/ejb_statelessbean_simple" element3="/jpa_book" element4="/jpa20_hello" element5="/jpa20_tietokone" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1455115458925"/>
+</session>

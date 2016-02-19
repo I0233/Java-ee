@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=test/\/home\/administrator\/.m2\/repository\/com\/h2database\/h2\/1.4.190\/h2-1.4.190.jar&amp;lt;org.h2.tools(Backup.class[Backup&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jdbc-esim/src&amp;lt;jdbcesim{CallProcStudents.java[CallProcStudents&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jdbc-esim/\/home\/administrator\/.m2\/repository\/com\/h2database\/h2\/1.4.190\/h2-1.4.190.jar&amp;lt;org.h2.tools(Console.class[Console&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jdbc-esim/src&amp;lt;jdbcesim{TulostaOppilaatPrStatementMain.java[TulostaOppilaatPrStatementMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jdbc-esim/src&amp;lt;jdbcesim{LuoOppilasTauluMain.java[LuoOppilasTauluMain&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="472" key="DIALOG_X_ORIGIN"/>
+			<item value="105" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

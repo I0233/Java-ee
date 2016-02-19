@@ -1,0 +1,40 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+
+public class JDBC_H2 {
+	static Statement stmt;
+	static ResultSet rs;
+	public static void main(String args[]) {
+		Connection conn = null;
+		try {
+			conn = Tietokannan_yhteys.getConnection();
+			System.out.println(conn);
+			
+			 stmt = conn.createStatement();
+			 rs = stmt.executeQuery("select * from henkilo");
+			System.out.println("********************************Kaikki***************************");
+			while (rs.next()) {
+				
+				System.out.println(rs.getObject("id") + "\t" + rs.getObject("etunimi")
+						+" "+ rs.getObject("sukunimi")+"\t"+ rs.getObject("sotu")
+						+"\t"+ rs.getObject("palkka")+"\t"+ rs.getObject("syntymaaika"));
+			}
+			System.out.println("********************************Tulostus lopusta alkuun***************************");
+			while (rs.next()) {
+				
+				System.out.println(rs.getObject("id") + "\t" + rs.getObject("etunimi")
+						+" "+ rs.getObject("sukunimi")+"\t"+ rs.getObject("sotu")
+						+"\t"+ rs.getObject("palkka")+"\t"+ rs.getObject("syntymaaika"));
+			}
+			stmt.close();
+			conn.close();
+		}
+		catch (Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+}

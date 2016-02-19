@@ -1,0 +1,32 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+
+public class JDBC_H1 {
+	
+	public static void main(String args[]) {
+		Connection conn = null;
+		try {
+			conn = Tietokannan_yhteys.getConnection();
+			System.out.println(conn);
+			
+			Statement stmt = conn.createStatement();
+
+			int tulos = 0;
+			for (String sql : lauseet) {
+				tulos += stmt.executeUpdate(sql);
+			}
+			System.out.println("Päivityksiä yhteensä " + tulos + " kappaletta");
+
+			// Kysely tietokantaan testaa, että data on lisätty sinne
+			ResultSet rs = stmt.executeQuery("select id, nimi from oppilas");
+			
+		}
+		catch (Exception e) {
+			
+		}
+	}
+
+}

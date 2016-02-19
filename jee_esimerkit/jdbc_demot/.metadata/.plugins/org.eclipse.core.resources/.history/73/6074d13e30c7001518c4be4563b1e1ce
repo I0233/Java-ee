@@ -1,0 +1,8 @@
+package tehtavat;
+
+
+public class JDBC_H5 {
+	public static void main(String[] args) {
+		
+	}
+}

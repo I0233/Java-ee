@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tuntiharjoitus 1</title>
+</head>
+<body>
+	<h1>Tuntiharjoitus 1</h1>
+	<fieldset>
+		<p>Tee Java Servlet-ohjelma, joka tulostaa komentorivillä annetun nimen</p>
+	</fieldset>
+	 <form action="../minunServletti" method="post">
+	            Etunimi  <input type="text" name="etunimi" />
+	            Sukunimi <input type="text" name="sukunimi" />
+	            <input type="submit" name="Submit" value="Sumbittaa" />
+	 </form>
+</body>
+</html>

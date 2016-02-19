@@ -1,0 +1,11 @@
+package avustavat_luokat;
+
+import java.util.List;
+
+public class MonivalintaDTO {
+	private int id;
+	private String kysymys;
+	private List<VaihtoehtoDTO> vaihtoehdot;
+	
+	public void MonivalintaDTO()
+}

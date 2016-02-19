@@ -1,0 +1,14 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+
+public class JDBC_H4 {
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

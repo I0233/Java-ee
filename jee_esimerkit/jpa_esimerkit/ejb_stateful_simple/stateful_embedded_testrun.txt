@@ -1,0 +1,53 @@
+INFO - ********************************************************************************
+INFO - OpenEJB http://openejb.apache.org/
+INFO - Startup: Fri Dec 11 14:22:13 EET 2015
+INFO - Copyright 1999-2012 (C) Apache OpenEJB Project, All Rights Reserved.
+INFO - Version: 4.0.0
+INFO - Build date: 20120426
+INFO - Build time: 08:49
+INFO - ********************************************************************************
+INFO - openejb.home = /home/juha/jee/was-esimerkit/ejb_stateful_simple
+INFO - openejb.base = /home/juha/jee/was-esimerkit/ejb_stateful_simple
+INFO - Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@27abe2cd
+INFO - succeeded in installing singleton service
+INFO - Using 'javax.ejb.embeddable.EJBContainer=true'
+INFO - Cannot find the configuration file [conf/openejb.xml].  Will attempt to create one for the beans deployed.
+INFO - Configuring Service(id=Default Security Service, type=SecurityService, provider-id=Default Security Service)
+INFO - Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+INFO - Creating TransactionManager(id=Default Transaction Manager)
+INFO - Creating SecurityService(id=Default Security Service)
+INFO - Beginning load: /home/juha/jee/was-esimerkit/ejb_stateful_simple/target/classes
+INFO - Using 'openejb.embedded=true'
+INFO - Configuring enterprise application: /home/juha/jee/was-esimerkit/ejb_stateful_simple
+INFO - Auto-deploying ejb CartBean: EjbDeployment(deployment-id=CartBean)
+INFO - Configuring Service(id=Default Stateful Container, type=Container, provider-id=Default Stateful Container)
+INFO - Auto-creating a container for bean CartBean: Container(type=STATEFUL, id=Default Stateful Container)
+INFO - Creating Container(id=Default Stateful Container)
+INFO - Using directory /tmp for stateful session passivation
+INFO - Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+INFO - Auto-creating a container for bean stateful_shop.SimpleStatefulEjbBeanTest: Container(type=MANAGED, id=Default Managed Container)
+INFO - Creating Container(id=Default Managed Container)
+INFO - Using directory /tmp for stateful session passivation
+INFO - Enterprise application "/home/juha/jee/was-esimerkit/ejb_stateful_simple" loaded.
+INFO - Assembling app: /home/juha/jee/was-esimerkit/ejb_stateful_simple
+INFO - ignoreXmlConfiguration == true
+INFO - ignoreXmlConfiguration == true
+INFO - Jndi(name="java:global/ejb_stateful_simple/CartBean!stateful_shop.CartBean")
+INFO - Jndi(name="java:global/ejb_stateful_simple/CartBean")
+INFO - existing thread singleton service in SystemInstance() org.apache.openejb.cdi.ThreadSingletonServiceImpl@27abe2cd
+INFO - OpenWebBeans Container is starting...
+INFO - Adding OpenWebBeansPlugin : [CdiPlugin]
+INFO - Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+INFO - All injection points were validated successfully.
+INFO - OpenWebBeans Container has started, it took [127] ms.
+INFO - Created Ejb(deployment-id=CartBean, ejb-name=CartBean, container=Default Stateful Container)
+INFO - Started Ejb(deployment-id=CartBean, ejb-name=CartBean, container=Default Stateful Container)
+INFO - Deployed Application(path=/home/juha/jee/was-esimerkit/ejb_stateful_simple)
+Adding items to cart
+Listing current cart contents
+  Pizza
+  Orange
+  Milk
+  Apple
+  Banana
+INFO - Undeploying app: /home/juha/jee/was-esimerkit/ejb_stateful_simple

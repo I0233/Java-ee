@@ -1,0 +1,10 @@
+package avustavat_luokat;
+
+public class VaihtoehtoDTO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

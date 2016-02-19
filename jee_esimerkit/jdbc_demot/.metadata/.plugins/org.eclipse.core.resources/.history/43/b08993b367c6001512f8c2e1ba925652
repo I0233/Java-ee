@@ -1,0 +1,33 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+
+public class JDBC_H3 {
+
+	public static void main(String args[]) {
+		Connection conn = null;
+		try {
+
+			conn = Tietokannan_yhteys.getConnection();
+			PreparedStatement perpare_stmt = conn.prepareStatement("select * as nimet from henkilo where sukunimi LIKE ?");
+			String hakutaulu[] = { "Ank%", "%iri", "%kaulus%" };
+
+			for (int i = 0; i < hakutaulu.length; i++) {
+				pstmt.setString(1, hakutaulu[i]);
+				ResultSet rs = pstmt.executeQuery();
+				while (rs.next()) {
+					String nimi = rs.getString("nimi");
+					int demo = rs.getInt("demopisteet");
+					int koe = rs.getInt("koepisteet");
+					int yht = rs.getInt("yht");
+					System.out.println(nimi + "\t" + demo + "\t" + koe + "\t" + yht);
+				}
+			}
+			conn.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package tehtavat;
+import java.sql.*;
+
+import jdbcconf.TietokantayhteysTehdas;
+
+public class JDBC_H1 {
+
+	public JDBC_H1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

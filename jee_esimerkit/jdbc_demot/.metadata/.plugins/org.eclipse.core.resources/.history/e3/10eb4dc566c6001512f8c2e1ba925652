@@ -1,0 +1,9 @@
+package tehtavat;
+
+public class JDBC_H3 {
+
+	public JDBC_H3() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

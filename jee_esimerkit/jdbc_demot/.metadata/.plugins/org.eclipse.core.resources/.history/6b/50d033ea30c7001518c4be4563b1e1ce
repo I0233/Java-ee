@@ -1,0 +1,11 @@
+package avustavat_luokat;
+
+import java.math.BigDecimal;
+import java.sql.Date;
+
+
+public class HenkiloDTO {
+	private String etunimi,sukunimi,sotu;
+	private BigDecimal palkka;
+	private Date syntymaaika;
+}

@@ -1,0 +1,42 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+
+public class JDBC_H2 {
+	
+	public void main(String args[]) {
+		Connection conn = null;
+		try {
+			conn = Tietokannan_yhteys.getConnection();
+			System.out.println(conn);
+			
+			Statement stmt1 = conn.createStatement();
+			 ResultSet rs = stmt1.executeQuery("select * from henkilo");
+			System.out.println("********************************Kaikki***************************");
+			while (rs.next()) {
+				
+				System.out.println(rs.getObject("id") + "\t" + rs.getObject("etunimi")
+						+" "+ rs.getObject("sukunimi")+"\t"+ rs.getObject("sotu")
+						+"\t"+ rs.getObject("palkka")+"\t"+ rs.getObject("syntymaaika"));
+			}
+			System.out.println("******************Tulostus lopusta alkuun************************");
+			Statement stmt2 = conn.createStatement();
+			ResultSet rs1 = stmt2.executeQuery("select * from henkilo order by id Desc");
+			while (rs.next()) {
+				
+				System.out.println(rs1.getObject("id") + "\t" + rs1.getObject("etunimi")
+						+" "+ rs1.getObject("sukunimi")+"\t"+ rs1.getObject("sotu")
+						+"\t"+ rs1.getObject("palkka")+"\t"+ rs1.getObject("syntymaaika"));
+			}
+			stmt.close();
+			conn.close();
+		}
+		
+		catch (Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+}

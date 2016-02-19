@@ -1,0 +1,34 @@
+package tehtavat;
+
+import java.awt.List;
+import java.sql.*;
+import java.util.ArrayList;
+
+import jdbc_conf.Tietokannan_yhteys;
+import avustavat_luokat.HenkiloDTO;
+
+public class JDBC_H5 {
+	public static void main(String[] args) {
+		
+		try{
+			Connection conn = Tietokannan_yhteys.getConnection();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select * from henkilo where sukunimi = 'Ankka' or sukunimi = 'Hiiri'");
+			while(rs.next()){
+				HenkiloDTO  henkilo = new HenkiloDTO();
+				henkilo.set_Htiedot(rs.getObject("etunimi").toString(), rs.getObject("sukunimi").toString(), rs.getObject("sotu").toString());
+				henkilo.set_Date(rs.getDate("syntymaaika"));
+				henkilo.set_palkka(rs.getBigDecimal("palkka"));
+				ArrayList<HenkiloDTO> henkilot = new ArrayList<>();
+				henkilot.add(henkilo);
+				System.out.println(henkilo.get_Htiedot());
+				System.out.println(henkilo.get_Date());
+				System.out.println(henkilo.get_palkka());
+			}
+		}
+		catch (Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+}

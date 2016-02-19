@@ -1,0 +1,36 @@
+package avustavat_luokat;
+
+import java.math.BigDecimal;
+import java.sql.Date;
+
+
+public class HenkiloDTO {
+	private String etunimi,sukunimi,sotu;
+	private BigDecimal palkka;
+	private Date syntymaaika;
+	
+	public HenkiloDTO() {
+		// Konstrokturi
+	}
+	private void set_Htiedot() {
+		this.etunimi = etunimi;
+		this.sukunimi = sukunimi;
+		this.palkka = palkka;
+
+	}
+	private void set_palkka(){
+		
+	}
+	private void set_Date(){
+		
+	}
+	private String get_Htiedot(){
+		return etunimi +" "+ sukunimi +" ("+sotu+")" ;
+	}
+	private BigDecimal get_palkka(){
+		return palkka;
+	}
+	private Date get_Date(){
+		return syntymaaika;
+	}
+}

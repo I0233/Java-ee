@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/jdbc-esim" element2="/jpa_book" element3="/jpa20_hello" element4="/jpa20_tietokone" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1454151897886"/>&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/ejb_stateful_simple" element2="/ejb_statelessbean_simple" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1454151904590"/>
+</session>

@@ -1,0 +1,14 @@
+package tehtavat;
+
+import java.sql.*;
+import jdbc_conf.Tietokannan_yhteys;
+import avustavat_luokat.HenkiloDTO;
+
+public class JDBC_H5 {
+	public static void main(String[] args) {
+		Connection conn = Tietokannan_yhteys.getConnection();
+		
+		HenkiloDTO  henkilo = new HenkiloDTO();
+	
+	}
+}

@@ -1,0 +1,10 @@
+package jdbc_conf;
+
+/* @author Ali Nadhum
+ * 27 Jan, 2016 
+ */
+
+public class Tietokannan_yhteys {
+		
+ public enum 
+}

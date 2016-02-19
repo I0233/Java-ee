@@ -1,0 +1,21 @@
+package tehtavat;
+
+import java.sql.*;
+
+import jdbc_conf.Tietokannan_yhteys;
+import jdbcconf.TietokantayhteysTehdas;
+
+public class JDBC_H1 {
+	
+	public static void main(String args[]) {
+		Connection conn = null;
+		try {
+			conn = TietokantayhteysTehdas.getConnection();
+			System.out.println(conn);
+		}
+		catch (Exception e) {
+			
+		}
+	}
+
+}
