@@ -3,9 +3,10 @@ package Jsf_Fishes;
 import javax.faces.bean.*;
 import javax.faces.context.FacesContext;
 
+@SuppressWarnings("serial")
 @ManagedBean
 @SessionScoped 
-public class FishController {
+public class FishController implements java.io.Serializable  {
 
 	public FishController() {
 		// TODO Auto-generated constructor stub
